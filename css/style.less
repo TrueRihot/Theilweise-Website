@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+body {
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+@nice-gradient: ~" linear-gradient(to bottom left, #fa709a 0%, #fee140 100%);";
+
+.nice-gradient {
+   background-image: @nice-gradient;
+}
+
+.text-white {
+    color: white;
+}
+
+section {
+    &.section-full {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    &.flex {
+        display: flex;
+        position: relative;
+
+        .flex50 {
+            flex: 0 0 50%;
+            position: relative;
+        }
+
+        .content-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .right {
+        }
+
+        .sub-content {
+            height: 100vh;
+            top: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+    }
+
+}
