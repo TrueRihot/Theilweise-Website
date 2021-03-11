@@ -8,11 +8,43 @@ body {
   position: relative;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 6rem;
   font-style: italic;
+  text-align: center;
+  width: 100%;
+  padding: 0 4%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 100px;
+}
+h1 span {
+  position: absolute;
+  bottom: 100%;
+  transform: translate(-50%, 0);
+}
+h2 {
+  font-style: italic;
+  font-size: 3.5rem;
+  margin-bottom: 1.3rem;
+}
+p {
+  max-width: 65ch;
+  font-size: 1.3rem;
+}
+p + p {
+  margin-top: 1.2rem;
+}
+.text-reveal {
+  overflow: hidden;
+  position: relative;
 }
 .nice-gradient {
-  background-image:  linear-gradient(to bottom left, #fa709a 0%, #fee140 100%);;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background-blend-mode: multiply,multiply;
+}
+.nice-gradient-2 {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
 }
 .text-white {
   color: white;
@@ -29,15 +61,73 @@ section.flex .flex50 {
   flex: 0 0 50%;
   position: relative;
 }
+section.flex .flex50 span:not(.headline-word) {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding: 0 4%;
+  display: block;
+  color: white;
+}
 section.flex .content-center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+  color: white;
 }
 section.flex .sub-content {
   height: 100vh;
   top: 100%;
   position: absolute;
   width: 100%;
+  /* special classes*/
+}
+section.flex .sub-content.glass {
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 10, 0.6);
+}
+section.flex .sub-content.fill {
+  background-color: #52526b;
+}
+section.flex .sub-content .texte {
+  width: 100%;
+  padding: 10%;
+  overflow: hidden;
+}
+section.flex .sub-content .animate-wrap {
+  overflow: hidden;
+}
+section.flex .sub-content .animate-wrap > * {
+  transform: translate3d(-100%, 0, 0);
+}
+#ich {
+  background-image: url(../src/ich.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#ich-2 {
+  background-image: url(../src/ich2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#lets-go {
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 10%;
+  fill: white;
+  width: 25px;
+  height: 25px;
+}
+#start-page span {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(5deg);
+  margin: 0;
 }
