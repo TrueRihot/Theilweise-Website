@@ -54,6 +54,15 @@ p {
    &-2 {
     background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%)
    }
+   &-3{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+   }
+   &-4 {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+   }
+   &-5 {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+   }
 }
 
 .text-white {
@@ -84,6 +93,11 @@ section {
             }
         }
 
+        .flex100 {
+            flex: 0 0 100%;
+            position: relative;
+        }
+
         .content-center {
             display: flex;
             justify-content: center;
@@ -94,7 +108,7 @@ section {
 
         }
 
-        .sub-content {
+        &[animation-dir="down"] .sub-content {
             height: 100vh;
             top: 100%;
             position: absolute;
@@ -129,6 +143,23 @@ section {
 
     }
 
+    .dinge-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        .dinge {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            position: absolute;
+            background-color: red;
+        }
+    }
+
 }
 
 
@@ -142,6 +173,27 @@ section {
 
 #ich-2 {
     background-image: url(../src/ich2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#fire {
+    background-image: url(../src/fire.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lohberg {
+    background-image: url(../src/Illustration.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#stars {
+    background-image: url(../src/stars.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

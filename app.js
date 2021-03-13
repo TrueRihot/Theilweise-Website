@@ -8,19 +8,33 @@ moePage.animateSections = () => {
         let miniElemnts = element.querySelectorAll('.sub-content');
         let timeline = gsap.timeline();
         let elementheight = 0;
+        const dir = element.getAttribute('animation-dir');
 
         miniElemnts.forEach((mini, j) => {
-            elementheight += mini.offsetHeight;
-            let inhalt = mini.querySelectorAll(`.sub-content .animate-wrap[animate-property="${j}"] > *`);
+            let inhalt = mini.querySelectorAll(`.animate-wrap[animate-property="${j}"] > *`);
             let animation = gsap.timeline();
 
-            timeline.to(
-                mini,
-                {
-                    top: 0,
-                    duration: 2
-                }
-            )
+            if(dir === 'down') {
+                elementheight += mini.offsetHeight;
+                timeline.to(
+                    mini,
+                    {
+                        top: 0,
+                        duration: 2,
+                    }
+                )
+            }else {
+                elementheight += mini.offsetWidth;
+                timeline.to(
+                    mini,
+                    {
+                        left: 0,
+                        duration: 2,
+                    }
+                )
+            }
+
+            
 
             inhalt.forEach((inhalt, i) => {
                 animation.to(inhalt,
@@ -47,7 +61,6 @@ moePage.animateSections = () => {
             pin: element,
             scrub: 1,
             snap: 1 / miniElemnts.length,
-            anticipatePin: 1,
             invalidateOnRefresh: true
         });
     });
@@ -107,9 +120,6 @@ moePage.AnimateTitle = (val) => {
             
             mouseTimeline.play()}
     });
-
-   
-
 };
 
 
