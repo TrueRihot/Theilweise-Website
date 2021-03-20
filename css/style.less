@@ -41,6 +41,14 @@ p {
     }
 }
 
+a{
+    color: white;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+        color: orange;
+    }
+}
+
 .text-reveal {
     overflow: hidden;
     position: relative;
@@ -93,6 +101,10 @@ section {
             }
         }
 
+        .flexauto {
+            flex: 0 1 100%;
+        }
+
         .flex100 {
             flex: 0 0 100%;
             position: relative;
@@ -108,6 +120,11 @@ section {
 
         }
 
+        .glass {
+            backdrop-filter: blur(4px);
+            background-color: rgba(0, 0, 10, 0.6);
+        }
+
         &[animation-dir="down"] .sub-content {
             height: 100vh;
             top: 100%;
@@ -115,11 +132,6 @@ section {
             width: 100%;
 
             /* special classes*/
-
-            &.glass {
-                backdrop-filter: blur(4px);
-                background-color: rgba(0, 0, 10, 0.6);
-            }
 
             &.fill {
                 background-color: #52526b;
@@ -157,6 +169,106 @@ section {
             left: 100%;
             position: absolute;
             background-color: red;
+        }
+    }
+
+    .links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+
+        .link {
+         height: 100%;
+         padding: 5rem;
+         display: flex;
+         flex-direction:column;
+         justify-content: space-between;
+         position: relative;
+
+         a{
+             margin: auto 20%;
+             max-width: 300px;
+         }
+
+         &>a:hover {
+             
+             .linkTitle {
+                 color: darkslategray;
+                 transform: scale(.99);
+                 box-shadow: 0 0 30px 0 rgba(0,0,0,0.4);
+             }
+             .anim {
+                 top: 0;
+                 left: 0;
+                 transform:  rotate(0);
+             }
+
+             svg{
+                transform: scale(1.1) rotate(5deg);
+
+             }
+
+         }
+        
+         .linkTitle {
+            transition: all 0.5s ease-in-out;
+            color: white;
+            font-size: 2rem;
+            font-style: italic;
+            font-weight: 600;
+            text-align: center;
+            padding: 1rem 3rem;
+            border: 1px solid white;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            transform-origin: center center;
+            transform: scale(1);
+            box-shadow: 0 0 45px 0 rgba(0,0,0,0.4);
+
+            span{
+                z-index: 0;
+            }
+
+            .anim {
+                transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+                z-index: -1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 100%;
+                transform-origin: top left;
+                transform:  rotate(5deg);
+                background-color: white;
+                opacity: 1;
+            }
+         }
+
+         .linkImg {
+             position: relative;
+             width: 100%;
+             height: auto;
+             &:before {
+                 content:'';
+                 padding-top: 100%;
+                 display: block;
+             }
+             &>svg{
+                 transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 4rem;
+                fill: white !important;
+                transform-origin: center center;
+                transform: scale(1) rotate(0);
+             }
+         }
         }
     }
 

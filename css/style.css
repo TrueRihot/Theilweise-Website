@@ -35,6 +35,13 @@ p {
 p + p {
   margin-top: 1.2rem;
 }
+a {
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: orange;
+}
 .text-reveal {
   overflow: hidden;
   position: relative;
@@ -79,6 +86,9 @@ section.flex .flex50 span:not(.headline-word) {
   display: block;
   color: white;
 }
+section.flex .flexauto {
+  flex: 0 1 100%;
+}
 section.flex .flex100 {
   flex: 0 0 100%;
   position: relative;
@@ -91,16 +101,16 @@ section.flex .content-center {
   flex-direction: column;
   color: white;
 }
+section.flex .glass {
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 10, 0.6);
+}
 section.flex[animation-dir="down"] .sub-content {
   height: 100vh;
   top: 100%;
   position: absolute;
   width: 100%;
   /* special classes*/
-}
-section.flex[animation-dir="down"] .sub-content.glass {
-  backdrop-filter: blur(4px);
-  background-color: rgba(0, 0, 10, 0.6);
 }
 section.flex[animation-dir="down"] .sub-content.fill {
   background-color: #52526b;
@@ -131,6 +141,92 @@ section .dinge-container .dinge {
   left: 100%;
   position: absolute;
   background-color: red;
+}
+section .links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+section .links .link {
+  height: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+section .links .link a {
+  margin: auto 20%;
+  max-width: 300px;
+}
+section .links .link > a:hover .linkTitle {
+  color: darkslategray;
+  transform: scale(0.99);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+section .links .link > a:hover .anim {
+  top: 0;
+  left: 0;
+  transform: rotate(0);
+}
+section .links .link > a:hover svg {
+  transform: scale(1.1) rotate(5deg);
+}
+section .links .link .linkTitle {
+  transition: all 0.5s ease-in-out;
+  color: white;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem 3rem;
+  border: 1px solid white;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  transform-origin: center center;
+  transform: scale(1);
+  box-shadow: 0 0 45px 0 rgba(0, 0, 0, 0.4);
+}
+section .links .link .linkTitle span {
+  z-index: 0;
+}
+section .links .link .linkTitle .anim {
+  transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 100%;
+  transform-origin: top left;
+  transform: rotate(5deg);
+  background-color: white;
+  opacity: 1;
+}
+section .links .link .linkImg {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+section .links .link .linkImg:before {
+  content: '';
+  padding-top: 100%;
+  display: block;
+}
+section .links .link .linkImg > svg {
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  fill: white !important;
+  transform-origin: center center;
+  transform: scale(1) rotate(0);
 }
 #ich {
   background-image: url(../src/ich.jpg);

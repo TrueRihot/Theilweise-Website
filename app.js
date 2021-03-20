@@ -34,8 +34,6 @@ moePage.animateSections = () => {
                 )
             }
 
-            
-
             inhalt.forEach((inhalt, i) => {
                 animation.to(inhalt,
                     {
