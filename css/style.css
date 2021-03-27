@@ -46,6 +46,16 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 600px) {
+  .mobile-large {
+    flex: 1 1 60% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mobile-small {
+    flex: 0 1 auto !important;
+  }
+}
 .nice-gradient {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
   background-blend-mode: multiply,multiply;

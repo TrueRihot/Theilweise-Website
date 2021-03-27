@@ -74,9 +74,13 @@ moePage.AnimateTitle = (val) => {
     let subline = document.querySelector('#start-page span');
     let mousedot = document.querySelector('#lets-go');
     let mouseTimeline = gsap.timeline();
-
     mouseTimeline.paused(true);
 
+    console.log(window.innerWidth);
+
+    if(window.innerWidth <= 939) {
+
+    }else {
     mouseTimeline.to(mousedot,{
         bottom: "-=30",
         duration: 1,
@@ -118,6 +122,7 @@ moePage.AnimateTitle = (val) => {
             
             mouseTimeline.play()}
     });
+}
 };
 
 

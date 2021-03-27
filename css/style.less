@@ -5,6 +5,8 @@
     font-family: 'montserrat';
 }
 
+@under600px: ~'screen and (max-width: 600px)';
+
 body {
     position: relative;
 }
@@ -54,6 +56,17 @@ a{
     position: relative;
 }
 
+.mobile-large {
+    @media @under600px {
+        flex: 1 1 60% !important;
+    }
+}
+
+.mobile-small {
+    @media @under600px {
+        flex: 0 1 auto !important;
+    }
+}
 
 .nice-gradient {
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
