@@ -76,9 +76,47 @@ moePage.AnimateTitle = (val) => {
     let mouseTimeline = gsap.timeline();
     mouseTimeline.paused(true);
 
-    console.log(window.innerWidth);
+    console.log('Screen width')
+    console.log(screen.width);
 
-    if(window.innerWidth <= 939) {
+    if(window.screen.width <= 939) {
+
+        mouseTimeline.to(mousedot,{
+            bottom: "-=30",
+            duration: 1,
+            ease: Power3.easeInOut,
+            yoyo: true,
+            repeat: 5,
+            delay:0
+        });
+
+            tl.to(words[0], {
+            bottom: 0,
+            duration: 1,
+            ease: Power3.easeOut,
+        })
+        .to(words[1],{
+            bottom: '35%',
+            duration: 1,
+            delay: -1,
+            ease: Power3.easeInOut,
+        })
+        .to(subline,{
+            top: "50%",
+            duration: 1,
+            delay: 0.25,
+            rotate:0,
+            ease: Power3.easeInOut,
+            onComplete: function(){
+                gsap.to(mousedot,{
+                    opacity: "1",
+                    duration: 1
+                })
+                
+                mouseTimeline.play()}
+        });
+
+
 
     }else {
     mouseTimeline.to(mousedot,{
