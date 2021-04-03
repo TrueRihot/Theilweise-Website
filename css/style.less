@@ -218,15 +218,7 @@ section {
             top: 0;
             left: 100%;
             position: absolute;
-            background-color: lightgray;
-
-            .fillImage {
-                img {
-                    width: 100%;
-                    height: auto; 
-                }
-            }
-            
+            background-color: lightgray;            
         }
     }
 
@@ -350,9 +342,21 @@ section {
     img {
         position: absolute;
         height: 100%;
+        width: 100%;
         left: 50%;
         top:50%;
-        transform: translate(-50% , -50%)
+        transform: translate(-50% , -50%);
+        object-fit: cover;
+    }
+}
+
+#ich-2 {
+    picture {
+        height: 100%;
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        position: relative;
     }
 }
 

@@ -192,10 +192,6 @@ section .dinge-container .dinge {
   position: absolute;
   background-color: lightgray;
 }
-section .dinge-container .dinge .fillImage img {
-  width: 100%;
-  height: auto;
-}
 section .links {
   position: absolute;
   top: 0;
@@ -307,9 +303,18 @@ section .links .link .linkImg > svg {
 .fillImage img {
   position: absolute;
   height: 100%;
+  width: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+#ich-2 picture {
+  height: 100%;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
 }
 #lets-go {
   position: absolute;
