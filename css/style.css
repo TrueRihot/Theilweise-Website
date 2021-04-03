@@ -190,7 +190,11 @@ section .dinge-container .dinge {
   top: 0;
   left: 100%;
   position: absolute;
-  background-color: red;
+  background-color: lightgray;
+}
+section .dinge-container .dinge .fillImage img {
+  width: 100%;
+  height: auto;
 }
 section .links {
   position: absolute;
@@ -300,35 +304,12 @@ section .links .link .linkImg > svg {
     margin: auto;
   }
 }
-#ich {
-  background-image: url(../src/ich.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#ich-2 {
-  background-image: url(../src/ich2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#fire {
-  background-image: url(../src/fire.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#lohberg {
-  background-image: url(../src/Illustration.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#stars {
-  background-image: url(../src/stars.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.fillImage img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #lets-go {
   position: absolute;

@@ -75,10 +75,6 @@ moePage.AnimateTitle = (val) => {
     let mousedot = document.querySelector('#lets-go');
     let mouseTimeline = gsap.timeline();
     mouseTimeline.paused(true);
-
-    console.log('Screen width')
-    console.log(screen.width);
-
     if(window.screen.width <= 939) {
 
         mouseTimeline.to(mousedot,{
@@ -167,3 +163,10 @@ moePage.AnimateTitle = (val) => {
 /* Evoking Methods*/
 moePage.animateSections();
 moePage.AnimateTitle(20);
+
+console.log('---------------------------------------');
+console.log('Moin');
+console.log('Interessiert dich wie irgendetwas hier gebaut ist? Oder bist du nur neugierig?');
+console.log('Wie auch immer, wenn du fragen hast, schreib mir ne Nachricht auf Instagram oder Xing wenn es um berufliche Anfragen geht.');
+console.log('Ansonsten gibts den Code zu dieser Seite auch in meinem Github repository');
+console.log('---------------------------------------');
