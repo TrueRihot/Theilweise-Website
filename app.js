@@ -58,7 +58,6 @@ moePage.animateSections = () => {
             end: '+=' + elementheight,
             pin: element,
             scrub: 1,
-            snap: 1 / miniElemnts.length,
             invalidateOnRefresh: true
         });
     });
