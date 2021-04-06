@@ -1,84 +1,96 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Moritz Theil - Front-End-Entwickler aus Dinslaken. Hier gibt es eine kurze ZUsammenfassung über mich und was ich mache.">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
-        </style>
-    <link rel="stylesheet" href="./css/style.css">
-    <script rel=preconnect src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script rel=preconnect src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>	
+    </style>
+    <link rel="stylesheet" href="./css/style.css" async>
+    <script rel=preconnect src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" async></script>
+    <script rel=preconnect src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" async></script>
+    <script src="./app.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="canonical" href="https://theilweise.de"/>
 
     <title>Theilweise by Moritz Theil</title>
     <noscript>Sorry, aber diese Seite braucht dringend Javascript.</noscript>
 </head>
+
 <body>
     <section class="section-full flex" id="start" animation-dir="down">
-            <div class="flex50 left mobile-small" id="ich">
-                <picture class="fillImage">
-                    <source srcset="./src/ichx1440.jpg" media="(min-width:2000px)">
-                    <source srcset="./src/ichx1920.jpg" media="(min-width:1700px)">
-                    <source srcset="./src/ichx1280.jpg" media="(min-width:1200px)">
-                    <source srcset="./src/ichx900.jpg" media="(min-width:100px)">
-                    <img src="./src/ichx1280.jpg" alt="ich" loading="lazy">
-                </picture>
-            </div>
-            <div class="flex50 right nice-gradient content-center start mobile-large">
-                <h1 class="text-white"><span class="headline-word">Moin</span><span class="headline-word">Moin</span></h1>
-                
-                <div class="text-reveal" id="start-page" style="width: 100%; height: 30px;"> <span>Scroll' runter, dann geht's los</span></div>
-               
-                <i id="lets-go" style="opacity: 0;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.69 146.61">
-                        <defs>
-                            <style>
-                                .mouse-outer {
-                                    fill: none;
-                                    stroke-miterlimit: 10;
-                                    stroke-width: 10px;
-                                    stroke: white;
-                                }
-                            </style>
-                        </defs>
-                        <g id="Ebene_2" data-name="Ebene 2">
-                            <g id="Ebene_1-2" data-name="Ebene 1">
-                                <path class="mouse-outer"
-                                    d="M40.84,5A35.88,35.88,0,0,0,5,40.84v64.93a35.85,35.85,0,0,0,71.69,0V40.84A35.89,35.89,0,0,0,40.84,5Z" />
-                                <rect x="32.99" y="25.92" width="15.71" height="28.85" rx="7.86" />
-                            </g>
-                        </g>
-                    </svg>
-                </i>
+        <div class="flex50 left mobile-small" id="ich">
+            <picture class="fillImage">
+                <source srcset="./src/ichx1440.jpg" media="(min-width:2000px)">
+                <source srcset="./src/ichx1920.jpg" media="(min-width:1700px)">
+                <source srcset="./src/ichx1280.jpg" media="(min-width:1200px)">
+                <source srcset="./src/ichx900.jpg" media="(min-width:100px)">
+                <img src="./src/ichx1280.jpg" alt="ich" loading="lazy">
+            </picture>
+        </div>
+        <div class="flex50 right nice-gradient content-center start mobile-large">
+            <h1 class="text-white"><span class="headline-word">Moin</span><span class="headline-word">Moin</span></h1>
 
-                <div class="sub-content glass content-center start-text">
-                    <div class="texte">
-                        <div class="animate-wrap" animate-property="0">
-                            <h2>Das bin ich</h2>
-                            <p>Hi, mein Name ist Moritz Theil. Ich bin 23 Jahre alt und komme gebürtig aus dem schönen Dinslaken.
-                                Seit etwa 2 Jahren arbeite ich als <span class="highlighted">Junior Frontenddeveloper</span> bei einem Unternehmen in der Nähe von Dortmund.
-                            </p>
-                            <p>
-                                Zum Frontend kam ich per Quereinstieg nach meiner in 2020 <span class="highlighted">abgeschlossenen Ausbildung</span> zum Mediengestalter Digital & Print (mit Schwerpunkt digital).
-                                <br>Aktuell bin ich für die Programmierung und Gestaltung des Front-Ends unseres Shops zuständig.
-                            </p>
-                            <p>
-                                Neben klassischem Webdevelopment mit Javascript, HTML und CSS bin ich auch an
-                                neueren Systemen interessiert und versuche in meiner Freizeit mich mit jenen zu beschäftigen.
-                            </p>
-                            <p>
-                                Aktuell versuche ich mein Wissen über React.js und GSAP zu erweitern.
-                            </p>
-                        </div>
+            <div class="text-reveal" id="start-page" style="width: 100%; height: 30px;"> <span>Scroll' runter, dann
+                    geht's los</span></div>
+
+            <i id="lets-go" style="opacity: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.69 146.61">
+                    <defs>
+                        <style>
+                            .mouse-outer {
+                                fill: none;
+                                stroke-miterlimit: 10;
+                                stroke-width: 10px;
+                                stroke: white;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Ebene_2" data-name="Ebene 2">
+                        <g id="Ebene_1-2" data-name="Ebene 1">
+                            <path class="mouse-outer"
+                                d="M40.84,5A35.88,35.88,0,0,0,5,40.84v64.93a35.85,35.85,0,0,0,71.69,0V40.84A35.89,35.89,0,0,0,40.84,5Z" />
+                            <rect x="32.99" y="25.92" width="15.71" height="28.85" rx="7.86" />
+                        </g>
+                    </g>
+                </svg>
+            </i>
+
+            <div class="sub-content glass content-center start-text">
+                <div class="texte">
+                    <div class="animate-wrap" animate-property="0">
+                        <h2>Das bin ich</h2>
+                        <p>Hi, mein Name ist Moritz Theil. Ich bin 23 Jahre alt und komme gebürtig aus dem schönen
+                            Dinslaken.
+                            Seit etwa 2 Jahren arbeite ich als <span class="highlighted">Junior Frontenddeveloper</span>
+                            bei einem Unternehmen in der Nähe von Dortmund.
+                        </p>
+                        <p>
+                            Zum Frontend kam ich per Quereinstieg nach meiner in 2020 <span
+                                class="highlighted">abgeschlossenen Ausbildung</span> zum Mediengestalter Digital &
+                            Print (mit Schwerpunkt digital).
+                            <br>Aktuell bin ich für die Programmierung und Gestaltung des Front-Ends unseres Shops
+                            zuständig.
+                        </p>
+                        <p>
+                            Neben klassischem Webdevelopment mit Javascript, HTML und CSS bin ich auch an
+                            neueren Systemen interessiert und versuche in meiner Freizeit mich mit jenen zu
+                            beschäftigen.
+                        </p>
+                        <p>
+                            Aktuell versuche ich mein Wissen über React.js und GSAP zu erweitern.
+                        </p>
                     </div>
                 </div>
-             
-            </div> 
+            </div>
+
+        </div>
     </section>
 
     <section class="section-full flex" id="content-2" animation-dir="down">
@@ -93,28 +105,34 @@
                 <source srcset="./src/ich2x900.jpg" media="(min-width:100px)">
                 <img src="./src/ich2x1280.jpg" alt="ich" loading="lazy">
             </picture>
-                <div class="sub-content glass content-center"> 
+            <div class="sub-content glass content-center">
 
-                    <div class="texte">
-                        <div class="animate-wrap" animate-property="0">
-                            <p>Wie eingangs schon erwähnt, besitze ich durch meine Ausbildung als <span class="highlighted">Mediengestalter</span> die Fähigkeit, Designkonzepte kreativ zu erarbeiten und umzusetzen.<br>
-                                In Kombination mit meinem Quereinstieg in die Frontendprogrammierung ermöglicht es mir, Websites und Web-Apps zielgerecht zu layouten, prototypisieren und zu programmieren.
-                            </p>
-                            <p>Dabei greife ich auf meine ausgedehnte Kenntnis in der <span class="highlighted">Adobe Creative Cloud</span> und Codingerfahrung zurück.</p>
-                            <p>Ich konnte bereits mehrere Jahre Erfahrungen in einem eher backendlastigem System sammeln. Dadurch habe ich bereits fundierte Kenntnisse in Sachen Templating.</p>
-                            <p>Aber auch die Programmierung frontendlastiger <span class="highlighted">Web-Apps</span> habe ich bereits in einem privaten Ramen grundlegend kennengelernt.</p>
-                        </div>
+                <div class="texte">
+                    <div class="animate-wrap" animate-property="0">
+                        <p>Wie eingangs schon erwähnt, besitze ich durch meine Ausbildung als <span
+                                class="highlighted">Mediengestalter</span> die Fähigkeit, Designkonzepte kreativ zu
+                            erarbeiten und umzusetzen.<br>
+                            In Kombination mit meinem Quereinstieg in die Frontendprogrammierung ermöglicht es mir,
+                            Websites und Web-Apps zielgerecht zu layouten, prototypisieren und zu programmieren.
+                        </p>
+                        <p>Dabei greife ich auf meine ausgedehnte Kenntnis in der <span class="highlighted">Adobe
+                                Creative Cloud</span> und Codingerfahrung zurück.</p>
+                        <p>Ich konnte bereits mehrere Jahre Erfahrungen in einem eher backendlastigem System sammeln.
+                            Dadurch habe ich bereits fundierte Kenntnisse in Sachen Templating.</p>
+                        <p>Aber auch die Programmierung frontendlastiger <span class="highlighted">Web-Apps</span> habe
+                            ich bereits in einem privaten Ramen grundlegend kennengelernt.</p>
                     </div>
-
                 </div>
-                
+
+            </div>
+
         </div>
     </section>
 
     <section class="section-full flex" animation-dir="right">
         <div class="flex100 nice-gradient content-center">
             <h2>Ein paar Projekte:</h2>
-            
+
             <div class="dinge-container  animate-wrap" animate-property="0">
                 <div class="dinge sub-content" id="fire">
                     <picture class="fillImage">
@@ -148,7 +166,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 
 
@@ -157,10 +175,10 @@
             <h2>Nicht genug von mir?</h2>
             <span>Besuche mich oder schreibe mir doch hier:</span>
         </div>
-    
-        <div class="links animate-wrap"  animate-property="0">
+
+        <div class="links animate-wrap" animate-property="0">
             <div class="flex100 links sub-content glass linkcontent">
-                
+
                 <div class="link flexauto">
                     <a href="https://www.instagram.com/moritz.th/">
                         <div class="linkImg">
@@ -171,12 +189,13 @@
                                             d="M53.45,77H23.58A23.61,23.61,0,0,1,0,53.45V23.58A23.61,23.61,0,0,1,23.58,0H53.45A23.61,23.61,0,0,1,77,23.58V53.45A23.61,23.61,0,0,1,53.45,77ZM23.58,5.77A17.83,17.83,0,0,0,5.77,23.58V53.45A17.83,17.83,0,0,0,23.58,71.26H53.45A17.83,17.83,0,0,0,71.26,53.45V23.58A17.83,17.83,0,0,0,53.45,5.77Z" />
                                         <path style="fill: #fff;"
                                             d="M38.51,58A19.49,19.49,0,1,1,58,38.51,19.51,19.51,0,0,1,38.51,58Zm0-33.06A13.58,13.58,0,1,0,52.09,38.51,13.59,13.59,0,0,0,38.51,24.94Z" />
-                                        <path style="fill: #fff;" d="M65.19,16.91a5.07,5.07,0,1,1-5.07-5.07A5.07,5.07,0,0,1,65.19,16.91Z" />
+                                        <path style="fill: #fff;"
+                                            d="M65.19,16.91a5.07,5.07,0,1,1-5.07-5.07A5.07,5.07,0,0,1,65.19,16.91Z" />
                                     </g>
                                 </g>
                             </svg>
                         </div>
-                        <div class="linkTitle " >
+                        <div class="linkTitle ">
                             <span>Instagram</span>
                             <div class="anim"></div>
                         </div>
@@ -186,12 +205,12 @@
                 <div class="link flexauto">
                     <a href="https://github.com/TrueRihot">
                         <div class="linkImg">
-                            <svg version="1.1" id="kappa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	  viewBox="0 0 438.536 438.536" style="enable-background:new 0 0 438.536 438.536;"
-	 xml:space="preserve">
-<g>
-	<g>
-		<path d="M414.41,24.123C398.326,8.042,378.964,0,356.309,0H82.225C59.577,0,40.208,8.042,24.123,24.123
+                            <svg version="1.1" id="kappa" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 438.536 438.536"
+                                style="enable-background:new 0 0 438.536 438.536;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M414.41,24.123C398.326,8.042,378.964,0,356.309,0H82.225C59.577,0,40.208,8.042,24.123,24.123
 			C8.042,40.207,0,59.576,0,82.225v274.088c0,22.65,8.042,42.017,24.123,58.098c16.084,16.084,35.454,24.126,58.102,24.126h63.953
 			c4.184,0,7.327-0.144,9.42-0.424c2.092-0.288,4.184-1.526,6.279-3.717c2.096-2.187,3.14-5.376,3.14-9.562
 			c0-0.568-0.05-7.046-0.144-19.417c-0.097-12.375-0.144-22.176-0.144-29.41l-6.567,1.143c-4.187,0.76-9.469,1.095-15.846,0.999
@@ -210,43 +229,43 @@
 			c-9.232,5.137-18.178,8.853-26.84,11.132c-8.661,2.286-18.414,4.004-29.263,5.147c9.891,8.562,14.839,22.072,14.839,40.538v68.238
 			c0,3.237,0.472,5.852,1.424,7.851c0.958,1.998,2.478,3.374,4.571,4.141c2.102,0.76,3.949,1.235,5.571,1.424
 			c1.622,0.191,3.949,0.287,6.995,0.287h63.953c22.648,0,42.018-8.042,58.095-24.126c16.084-16.084,24.126-35.454,24.126-58.102
-			V82.225C438.533,59.576,430.491,40.204,414.41,24.123z"/>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+			V82.225C438.533,59.576,430.491,40.204,414.41,24.123z" />
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
 
                         </div>
-                        <div class="linkTitle " >
+                        <div class="linkTitle ">
                             <span>Github</span>
                             <div class="anim"></div>
                         </div>
@@ -256,11 +275,11 @@
                 <div class="link flexauto">
                     <a href="https://www.xing.com/profile/Moritz_Theil/cv">
                         <div class="linkImg">
-                            <svg version="1.1" id="keepo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 438.536 438.536" style="enable-background:new 0 0 438.536 438.536;"
-	 xml:space="preserve">
-<g>
-	<path d="M414.41,24.123C398.333,8.042,378.963,0,356.315,0H82.228C59.58,0,40.21,8.042,24.126,24.123
+                            <svg version="1.1" id="keepo" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 438.536 438.536"
+                                style="enable-background:new 0 0 438.536 438.536;" xml:space="preserve">
+                                <g>
+                                    <path d="M414.41,24.123C398.333,8.042,378.963,0,356.315,0H82.228C59.58,0,40.21,8.042,24.126,24.123
 		C8.045,40.207,0.003,59.576,0.003,82.225v274.084c0,22.647,8.042,42.018,24.123,58.102c16.084,16.084,35.454,24.126,58.102,24.126
 		h274.084c22.648,0,42.018-8.042,58.095-24.126c16.084-16.084,24.126-35.454,24.126-58.102V82.225
 		C438.532,59.576,430.49,40.204,414.41,24.123z M124.486,292.64H71.665c-3.046,0-5.33-1.242-6.851-3.72
@@ -269,55 +288,53 @@
 		l-56.811,100.49C135.146,289.207,130.388,292.64,124.486,292.64z M373.724,47.967L256.953,254.383v0.287l74.236,135.895
 		c1.708,2.854,1.811,5.523,0.281,7.994c-1.328,2.282-3.706,3.429-7.132,3.429h-52.534c-6.091,0-11.04-3.333-14.845-9.992
 		c-49.678-91.17-74.612-136.948-74.8-137.328L299.501,46.529c3.617-6.665,8.277-9.994,13.986-9.994h53.393
-		c3.23,0,5.509,1.143,6.851,3.427C375.253,42.25,375.253,44.917,373.724,47.967z"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+		c3.23,0,5.509,1.143,6.851,3.427C375.253,42.25,375.253,44.917,373.724,47.967z" />
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
 
                         </div>
-                        <div class="linkTitle " >
+                        <div class="linkTitle ">
                             <span>Xing</span>
                             <div class="anim"></div>
                         </div>
                     </a>
                 </div>
-                
+
             </div>
         </div>
-          
+
     </section>
 
-
-
-    <script src="./app.js"></script>
 </body>
+
 </html>
